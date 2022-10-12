@@ -8,7 +8,7 @@ export const create = async ctx => {
         return 
     }
     
-    const [type, token] = ctx.headers.authorization.split(' ')
+    const [type, token] = ctx.headers.authorization?.split(' ')
     console.log({type, token})
      
     try{
